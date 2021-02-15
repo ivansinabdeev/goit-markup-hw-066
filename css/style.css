@@ -273,15 +273,16 @@ header {
   align-items: center;
   width: 17px;
   height: 17px;
-  fill: var(--logo-color-text);
+  /* fill: var(--logo-color-text); */
 }
-.modal-close:focus .modal-icon {
+.modal-close:focus {
   fill: var(--acent-color);
 }
 .title-modal {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  font-weight: bold;
   margin-bottom: 12px;
 }
 .modal-form {
@@ -289,10 +290,18 @@ header {
   flex-direction: column;
 }
 .modal-form-label {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  margin-top: 10px;
+  letter-spacing: 0.01em;
+
+  color: var(--ouwer-text-color);
 }
 .modal-form-input-icon {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 .modal-form-input {
   display: block;
@@ -313,8 +322,9 @@ header {
   left: 12px;
   transform: translateY(-50%);
   align-items: center;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
+  fill: var(--main-text-color)
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus + .modal-form-icon {
@@ -326,6 +336,7 @@ header {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-top: 4px;
 
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -347,10 +358,12 @@ header {
   outline: none;
   border-color: var(--acent-color);
 }
+
 .modal-form-policy {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 20px;
 
   font-style: normal;
   font-weight: normal;
@@ -378,6 +391,7 @@ header {
 }
 .modal-btn {
   align-self: center;
+  margin-top: 30px;
 }
 /* Features */
 
@@ -900,4 +914,40 @@ header {
 .footer-social-link:focus {
   background-color: var(--acent-color);
   fill: var(--secondary-text-color);
+}
+.form-footer {
+  height: 86px;
+  margin-left: 93px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: inherit;
+  color: var(--secondary-text-color);
+}
+.footer-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  padding-left: 16px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-btn {
+  display: inline-flex;
+  margin-left: 12px;
+  align-items: center;
+}
+.footer-btn-icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
